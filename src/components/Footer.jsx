@@ -17,7 +17,7 @@ function Footer() {
             </h1>
         </div>
         <div className='middle'>
-        <p>Copyright © 2025 SB </p>
+        <p>Copyright © 2025 JS </p>
         </div>
         <div className='right flex justify-center items-center gap-4'>
             <Link to={"/"}><FaGithub /></Link>
