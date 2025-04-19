@@ -1,0 +1,184 @@
+/* text wave */
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    color: rgb(218, 0, 218);
+    font-weight: bold;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 1s;
+}
+.wave-text span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.wave-text span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+.wave-text span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* hand wave */
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  /* info texts */
+ 
+  .dropping-texts > div {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    position:absolute;
+    font-weight:700;
+    font-size: 3rem !important;   
+    box-shadow: 0px 60px 25px -20px rgba(0,0,0,0.5);
+  }
+  
+  .dropping-texts > div:nth-child(1) {
+    animation: roll 5s linear infinite 1s;
+  }
+  .dropping-texts > div:nth-child(2) {
+    animation: roll 5s linear infinite 2s;
+  }
+  .dropping-texts > div:nth-child(3) {
+    animation: roll 5s linear infinite 3s;
+  }
+  .dropping-texts > div:nth-child(4) {
+    animation: roll2 5s linear infinite 4s;
+  }
+  
+  @keyframes roll {
+    0% {
+      font-size:0px;
+      opacity:0;
+      margin-left:-30px;
+      margin-top:0px;
+      transform: rotate(-25deg);
+    }
+    3% {
+      opacity:1;
+      transform: rotate(0deg);
+    }
+    5% {
+      font-size:inherit;
+      opacity:1;
+      margin-left:0px;
+      margin-top:0px;
+    }
+    20% {
+      font-size:inherit;
+      opacity:1;
+      margin-left:0px;
+      margin-top:0px;
+      transform: rotate(0deg);
+    }
+    27% {
+      font-size:0px;
+      opacity:0.5;
+      margin-left:20px;
+      margin-top:100px;
+    }
+    100% {
+      font-size:0px;
+      opacity:0;
+      margin-left:-30px;
+      margin-top:0px;
+      transform: rotate(15deg);
+    }
+  }
+  
+  @keyframes roll2 {
+    0% {
+      font-size:0px;
+      opacity:0;
+      margin-left:-30px;
+      margin-top:0px;
+      transform: rotate(-25deg);
+    }
+    3% {
+      opacity:1;
+      transform: rotate(0deg);
+    }
+    5% {
+      font-size:inherit;
+      opacity:1;
+      margin-left:0px;
+      margin-top:0px;
+    }
+    30% {
+      font-size:inherit;
+      opacity:1;
+      margin-left:0px;
+      margin-top:0px;
+      transform: rotate(0deg);
+    }
+    37% {
+      font-size:1500px;
+      opacity:0;
+      margin-left:-1000px;
+      margin-top:-800px;
+    }
+    100% {
+      font-size:0px;
+      opacity:0;
+      margin-left:-30px;
+      margin-top:0px;
+      transform: rotate(15deg);
+    }
+  }
+  
+  @keyframes bg {
+    0% {background: #ff0075;}
+    3% {background: #0094ff;}
+    20% {background: #0094ff;}
+    23% {background: #b200ff;}
+    40% {background: #b200ff;}
+    43% {background: #8BC34A;}
+    60% {background: #8BC34A;}
+    63% {background: #F44336;}
+    80% {background: #F44336;}
+    83% {background: #F44336;}
+    100% {background: #F44336;}
+  }
