@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./home.module.css";
+import { Link } from "react-router-dom";
 // icons
 import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
@@ -79,13 +80,13 @@ function Home() {
           <p>Feel free to <span className="text-purple-500">connect</span> with me</p>
           <div className="handles flex gap-4">
             <div className="handle w-[3rem] h-[3rem] rounded-full bg-gray-200 flex justify-center items-center text-xl cursor-pointer">
-                <FaGithub className="text-purple-700"/>
+                <Link to="https://github.com/SarkarJyotirmay/"><FaGithub className="text-purple-700"/></Link>
             </div>
             <div className="handle w-[3rem] h-[3rem] rounded-full bg-gray-200 flex justify-center items-center text-xl cursor-pointer">
-                <FaTwitter className="text-purple-700"/>
+                <Link tp="https://x.com/jsarkar0201"><FaTwitter className="text-purple-700"/></Link>
             </div>
             <div className="handle w-[3rem] h-[3rem] rounded-full bg-gray-200 flex justify-center items-center text-xl cursor-pointer">
-                <FaLinkedin className="text-purple-700"/>
+                <Link to="https://www.linkedin.com/in/jyotirmay-sarkar/"><FaLinkedin className="text-purple-700"/></Link>
             </div>
             <div className="handle w-[3rem] h-[3rem] rounded-full bg-gray-200 flex justify-center items-center text-xl cursor-pointer">
                 <FaInstagram className="text-purple-700"/>

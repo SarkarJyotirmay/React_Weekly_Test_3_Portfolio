@@ -11,8 +11,8 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="min-h-18 px-1 sm:px-8 flex justify-between items-center bg-[#162456d2] text-white sticky top-0">
-      <div className="left text-xl sm:text-2xl font-bold text-indigo-600">
+    <header className="min-h-18 px-1 sm:px-8 flex justify-between items-center bg-[#162456b8] text-white sticky top-0">
+      <div className="left text-xl sm:text-2xl font-bold text-purple-700">
         <h1>Jyotirmay Sarkar</h1>
       </div>
 
