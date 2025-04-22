@@ -1,3 +1,4 @@
+
 import React from "react";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
@@ -8,12 +9,13 @@ function Home() {
   return (
     <>
       <main className="min-h-screen ">
-        <section className="section-1 h-screen flex justify-center items-center">
-          <section className="left w-1/2 text-white p-12">
-            <h1 className="text-3xl text-semibold">
+        {/* section -1 */}
+        <section className="section-1  flex justify-center items-center">
+          <section className="left w-1/2 text-white p-2 md:p-12">
+            <h1 className="text-xl md:text-3xl text-semibold">
               Hi There, <span className={styles.wave}>👋</span>
             </h1>
-            <h2 className="text-[3rem] text-cyan-400">I am </h2>
+            <h2 className="text-[2rem] md:text-[3rem] text-cyan-400">I am </h2>
 
             <div className={styles["wave-container"]}>
               <h1 className={styles["wave-text"]}>
@@ -43,9 +45,9 @@ function Home() {
         </section>
 
         {/* section - 2 */}
-        <section className="section-2 h-screen flex items-center px-12 py-20 text-white text-2xl ">
-          <div className="left w-[80%] flex flex-col gap-12">
-            <h1 className="text-4xl font-semibold text-center py-6">
+        <section className="section-2 min-h-screen flex flex-col md:flex-row items-center gap-4 px-2 md:px-12 py-20 text-white text-xl md:text-2xl ">
+          <div className="left w-[80%] flex flex-col gap-4 md:gap-12 ">
+            <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold text-center py-6">
               LET ME <span className="text-purple-500">INTRODUCE</span> MYSELF
             </h1>
 
